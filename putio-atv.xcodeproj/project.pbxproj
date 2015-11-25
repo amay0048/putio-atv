@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B609B8541BFB43B000B4B544 /* BrowseFilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B609B8531BFB43B000B4B544 /* BrowseFilesViewController.m */; };
+		B64749A21BFA0D5600577245 /* PutioController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64749A11BFA0D5600577245 /* PutioController.m */; };
+		B663D6091BF9DFB9004B6B88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D6081BF9DFB9004B6B88 /* main.m */; };
+		B663D60C1BF9DFB9004B6B88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D60B1BF9DFB9004B6B88 /* AppDelegate.m */; };
+		B663D6121BF9DFB9004B6B88 /* putio_atv.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B663D6101BF9DFB9004B6B88 /* putio_atv.xcdatamodeld */; };
+		B663D6221BF9DFB9004B6B88 /* putio_atvTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D6211BF9DFB9004B6B88 /* putio_atvTests.m */; };
+		B663D62D1BF9DFB9004B6B88 /* putio_atvUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D62C1BF9DFB9004B6B88 /* putio_atvUITests.m */; };
+		B663D63D1BF9E086004B6B88 /* FolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D63C1BF9E086004B6B88 /* FolderViewController.m */; };
+		B663D6411BF9E323004B6B88 /* FileCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D6401BF9E323004B6B88 /* FileCollectionView.m */; };
+		B663D6451BF9E597004B6B88 /* PutioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D6441BF9E597004B6B88 /* PutioViewController.m */; };
+		B663D6481BF9E6CD004B6B88 /* FilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D6471BF9E6CD004B6B88 /* FilesViewController.m */; };
+		B663D64B1BF9E9E3004B6B88 /* SearchFilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D64A1BF9E9E3004B6B88 /* SearchFilesViewController.m */; };
+		B663D6551BF9EC25004B6B88 /* UIColor+Putio.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D6521BF9EC25004B6B88 /* UIColor+Putio.m */; };
+		B663D6581BF9EF18004B6B88 /* FilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D6571BF9EF18004B6B88 /* FilesTableViewController.m */; };
+		B663D6681BFA0007004B6B88 /* NSDate+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D6671BFA0007004B6B88 /* NSDate+Tools.m */; };
+		B682F5D71C00B34E001B5A10 /* UIView+GroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = B682F5D61C00B34E001B5A10 /* UIView+GroupView.m */; };
+		B682F5DA1C00B398001B5A10 /* PCGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = B682F5D91C00B398001B5A10 /* PCGroupView.m */; };
+		B68CA22D1BFB5446005B93D0 /* FileCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B68CA22C1BFB5446005B93D0 /* FileCollectionViewCell.m */; };
+		B68CA2321BFB553E005B93D0 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B68CA2311BFB553E005B93D0 /* AsyncImageView.m */; };
+		B6A0CDA11C015A4100FDE54C /* TraktController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0CDA01C015A4100FDE54C /* TraktController.m */; };
+		B6C31C7D1BFDDDE700BAEAF6 /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C31C7C1BFDDDE700BAEAF6 /* File.m */; };
+		B6D91BA81BFDC76E00F7065C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D91BA71BFDC76E00F7065C /* Assets.xcassets */; };
+		B6DDCF331C009FE500673096 /* FileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DDCF321C009FE500673096 /* FileDetailViewController.m */; };
+		B6DDCF441C00AAE200673096 /* ThunderRequestTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64749961BFA0BD800577245 /* ThunderRequestTV.framework */; };
+		B6DDCF451C00AAE200673096 /* ThunderRequestTV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B64749961BFA0BD800577245 /* ThunderRequestTV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B64749911BFA0BD800577245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B647497B1BFA0ACA00577245 /* ThunderRequest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2E5088219C835A300350F00;
+			remoteInfo = ThunderRequest;
+		};
+		B64749931BFA0BD800577245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B647497B1BFA0ACA00577245 /* ThunderRequest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2E5088D19C835A300350F00;
+			remoteInfo = ThunderRequestTests;
+		};
+		B64749951BFA0BD800577245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B647497B1BFA0ACA00577245 /* ThunderRequest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 49084FD11BD13DBD0012F636;
+			remoteInfo = ThunderRequestTV;
+		};
+		B663D61E1BF9DFB9004B6B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B663D5FC1BF9DFB9004B6B88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B663D6031BF9DFB9004B6B88;
+			remoteInfo = "putio-atv";
+		};
+		B663D6291BF9DFB9004B6B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B663D5FC1BF9DFB9004B6B88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B663D6031BF9DFB9004B6B88;
+			remoteInfo = "putio-atv";
+		};
+		B6DDCF461C00AAE200673096 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B647497B1BFA0ACA00577245 /* ThunderRequest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 49084FD01BD13DBD0012F636;
+			remoteInfo = ThunderRequestTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B6DDCF481C00AAE200673096 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B6DDCF451C00AAE200673096 /* ThunderRequestTV.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B609B8521BFB43B000B4B544 /* BrowseFilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowseFilesViewController.h; path = ViewControllers/BrowseFilesViewController.h; sourceTree = "<group>"; };
+		B609B8531BFB43B000B4B544 /* BrowseFilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowseFilesViewController.m; path = ViewControllers/BrowseFilesViewController.m; sourceTree = "<group>"; };
+		B647497B1BFA0ACA00577245 /* ThunderRequest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ThunderRequest.xcodeproj; path = ../ThunderRequest/ThunderRequest.xcodeproj; sourceTree = "<group>"; };
+		B64749A01BFA0D5600577245 /* PutioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PutioController.h; sourceTree = "<group>"; };
+		B64749A11BFA0D5600577245 /* PutioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PutioController.m; sourceTree = "<group>"; };
+		B663D6041BF9DFB9004B6B88 /* putio-atv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "putio-atv.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B663D6081BF9DFB9004B6B88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B663D60A1BF9DFB9004B6B88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B663D60B1BF9DFB9004B6B88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B663D6111BF9DFB9004B6B88 /* putio_atv.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = putio_atv.xcdatamodel; sourceTree = "<group>"; };
+		B663D6181BF9DFB9004B6B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B663D61D1BF9DFB9004B6B88 /* putio-atvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "putio-atvTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B663D6211BF9DFB9004B6B88 /* putio_atvTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = putio_atvTests.m; sourceTree = "<group>"; };
+		B663D6231BF9DFB9004B6B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B663D6281BF9DFB9004B6B88 /* putio-atvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "putio-atvUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B663D62C1BF9DFB9004B6B88 /* putio_atvUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = putio_atvUITests.m; sourceTree = "<group>"; };
+		B663D62E1BF9DFB9004B6B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B663D63B1BF9E086004B6B88 /* FolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FolderViewController.h; path = ViewControllers/FolderViewController.h; sourceTree = "<group>"; };
+		B663D63C1BF9E086004B6B88 /* FolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FolderViewController.m; path = ViewControllers/FolderViewController.m; sourceTree = "<group>"; };
+		B663D63F1BF9E323004B6B88 /* FileCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileCollectionView.h; path = Views/FileCollectionView.h; sourceTree = "<group>"; };
+		B663D6401BF9E323004B6B88 /* FileCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileCollectionView.m; path = Views/FileCollectionView.m; sourceTree = "<group>"; };
+		B663D6431BF9E597004B6B88 /* PutioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PutioViewController.h; path = ViewControllers/PutioViewController.h; sourceTree = "<group>"; };
+		B663D6441BF9E597004B6B88 /* PutioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PutioViewController.m; path = ViewControllers/PutioViewController.m; sourceTree = "<group>"; };
+		B663D6461BF9E6CD004B6B88 /* FilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilesViewController.h; path = ViewControllers/FilesViewController.h; sourceTree = "<group>"; };
+		B663D6471BF9E6CD004B6B88 /* FilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FilesViewController.m; path = ViewControllers/FilesViewController.m; sourceTree = "<group>"; };
+		B663D6491BF9E9E3004B6B88 /* SearchFilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchFilesViewController.h; path = ViewControllers/SearchFilesViewController.h; sourceTree = "<group>"; };
+		B663D64A1BF9E9E3004B6B88 /* SearchFilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchFilesViewController.m; path = ViewControllers/SearchFilesViewController.m; sourceTree = "<group>"; };
+		B663D6511BF9EC25004B6B88 /* UIColor+Putio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Putio.h"; sourceTree = "<group>"; };
+		B663D6521BF9EC25004B6B88 /* UIColor+Putio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Putio.m"; sourceTree = "<group>"; };
+		B663D6561BF9EF18004B6B88 /* FilesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilesTableViewController.h; path = ViewControllers/FilesTableViewController.h; sourceTree = "<group>"; };
+		B663D6571BF9EF18004B6B88 /* FilesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FilesTableViewController.m; path = ViewControllers/FilesTableViewController.m; sourceTree = "<group>"; };
+		B663D6661BFA0007004B6B88 /* NSDate+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Tools.h"; sourceTree = "<group>"; };
+		B663D6671BFA0007004B6B88 /* NSDate+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Tools.m"; sourceTree = "<group>"; };
+		B682F5D51C00B34E001B5A10 /* UIView+GroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GroupView.h"; sourceTree = "<group>"; };
+		B682F5D61C00B34E001B5A10 /* UIView+GroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GroupView.m"; sourceTree = "<group>"; };
+		B682F5D81C00B398001B5A10 /* PCGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCGroupView.h; sourceTree = "<group>"; };
+		B682F5D91C00B398001B5A10 /* PCGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCGroupView.m; sourceTree = "<group>"; };
+		B68CA22B1BFB5446005B93D0 /* FileCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileCollectionViewCell.h; path = Views/FileCollectionViewCell.h; sourceTree = "<group>"; };
+		B68CA22C1BFB5446005B93D0 /* FileCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileCollectionViewCell.m; path = Views/FileCollectionViewCell.m; sourceTree = "<group>"; };
+		B68CA2301BFB553E005B93D0 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncImageView.h; path = Views/AsyncImageView.h; sourceTree = "<group>"; };
+		B68CA2311BFB553E005B93D0 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncImageView.m; path = Views/AsyncImageView.m; sourceTree = "<group>"; };
+		B6A0CD9F1C015A4100FDE54C /* TraktController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TraktController.h; sourceTree = "<group>"; };
+		B6A0CDA01C015A4100FDE54C /* TraktController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TraktController.m; sourceTree = "<group>"; };
+		B6C31C7B1BFDDDE700BAEAF6 /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
+		B6C31C7C1BFDDDE700BAEAF6 /* File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
+		B6D91BA71BFDC76E00F7065C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6DDCF311C009FE500673096 /* FileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileDetailViewController.h; path = ViewControllers/FileDetailViewController.h; sourceTree = "<group>"; };
+		B6DDCF321C009FE500673096 /* FileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileDetailViewController.m; path = ViewControllers/FileDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B663D6011BF9DFB9004B6B88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6DDCF441C00AAE200673096 /* ThunderRequestTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B663D61A1BF9DFB9004B6B88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B663D6251BF9DFB9004B6B88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B647498C1BFA0BD700577245 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B64749921BFA0BD800577245 /* ThunderRequest.framework */,
+				B64749941BFA0BD800577245 /* ThunderRequestTests.xctest */,
+				B64749961BFA0BD800577245 /* ThunderRequestTV.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B663D5FB1BF9DFB9004B6B88 = {
+			isa = PBXGroup;
+			children = (
+				B663D6061BF9DFB9004B6B88 /* putio-atv */,
+				B663D6201BF9DFB9004B6B88 /* putio-atvTests */,
+				B663D62B1BF9DFB9004B6B88 /* putio-atvUITests */,
+				B663D6051BF9DFB9004B6B88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B663D6051BF9DFB9004B6B88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B663D6041BF9DFB9004B6B88 /* putio-atv.app */,
+				B663D61D1BF9DFB9004B6B88 /* putio-atvTests.xctest */,
+				B663D6281BF9DFB9004B6B88 /* putio-atvUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B663D6061BF9DFB9004B6B88 /* putio-atv */ = {
+			isa = PBXGroup;
+			children = (
+				B663D60A1BF9DFB9004B6B88 /* AppDelegate.h */,
+				B663D60B1BF9DFB9004B6B88 /* AppDelegate.m */,
+				B663D6071BF9DFB9004B6B88 /* Supporting Files */,
+				B6D91BA71BFDC76E00F7065C /* Assets.xcassets */,
+				B663D6181BF9DFB9004B6B88 /* Info.plist */,
+				B663D6101BF9DFB9004B6B88 /* putio_atv.xcdatamodeld */,
+				B663D6591BF9FFB5004B6B88 /* API */,
+				B663D64C1BF9EC0B004B6B88 /* Categories */,
+				B663D63E1BF9E172004B6B88 /* ViewControllers */,
+				B663D6421BF9E328004B6B88 /* Views */,
+			);
+			path = "putio-atv";
+			sourceTree = "<group>";
+		};
+		B663D6071BF9DFB9004B6B88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B663D6081BF9DFB9004B6B88 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B663D6201BF9DFB9004B6B88 /* putio-atvTests */ = {
+			isa = PBXGroup;
+			children = (
+				B663D6211BF9DFB9004B6B88 /* putio_atvTests.m */,
+				B663D6231BF9DFB9004B6B88 /* Info.plist */,
+			);
+			path = "putio-atvTests";
+			sourceTree = "<group>";
+		};
+		B663D62B1BF9DFB9004B6B88 /* putio-atvUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B663D62C1BF9DFB9004B6B88 /* putio_atvUITests.m */,
+				B663D62E1BF9DFB9004B6B88 /* Info.plist */,
+			);
+			path = "putio-atvUITests";
+			sourceTree = "<group>";
+		};
+		B663D63E1BF9E172004B6B88 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B609B8521BFB43B000B4B544 /* BrowseFilesViewController.h */,
+				B609B8531BFB43B000B4B544 /* BrowseFilesViewController.m */,
+				B663D6561BF9EF18004B6B88 /* FilesTableViewController.h */,
+				B663D6571BF9EF18004B6B88 /* FilesTableViewController.m */,
+				B663D6461BF9E6CD004B6B88 /* FilesViewController.h */,
+				B663D6471BF9E6CD004B6B88 /* FilesViewController.m */,
+				B663D63B1BF9E086004B6B88 /* FolderViewController.h */,
+				B663D63C1BF9E086004B6B88 /* FolderViewController.m */,
+				B663D6431BF9E597004B6B88 /* PutioViewController.h */,
+				B663D6441BF9E597004B6B88 /* PutioViewController.m */,
+				B663D6491BF9E9E3004B6B88 /* SearchFilesViewController.h */,
+				B663D64A1BF9E9E3004B6B88 /* SearchFilesViewController.m */,
+				B6DDCF311C009FE500673096 /* FileDetailViewController.h */,
+				B6DDCF321C009FE500673096 /* FileDetailViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B663D6421BF9E328004B6B88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B663D63F1BF9E323004B6B88 /* FileCollectionView.h */,
+				B663D6401BF9E323004B6B88 /* FileCollectionView.m */,
+				B68CA22B1BFB5446005B93D0 /* FileCollectionViewCell.h */,
+				B68CA22C1BFB5446005B93D0 /* FileCollectionViewCell.m */,
+				B68CA2301BFB553E005B93D0 /* AsyncImageView.h */,
+				B68CA2311BFB553E005B93D0 /* AsyncImageView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B663D64C1BF9EC0B004B6B88 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B663D6511BF9EC25004B6B88 /* UIColor+Putio.h */,
+				B663D6521BF9EC25004B6B88 /* UIColor+Putio.m */,
+				B682F5D51C00B34E001B5A10 /* UIView+GroupView.h */,
+				B682F5D61C00B34E001B5A10 /* UIView+GroupView.m */,
+				B682F5D81C00B398001B5A10 /* PCGroupView.h */,
+				B682F5D91C00B398001B5A10 /* PCGroupView.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		B663D6591BF9FFB5004B6B88 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B64749A01BFA0D5600577245 /* PutioController.h */,
+				B64749A11BFA0D5600577245 /* PutioController.m */,
+				B6A0CD9F1C015A4100FDE54C /* TraktController.h */,
+				B6A0CDA01C015A4100FDE54C /* TraktController.m */,
+				B647497B1BFA0ACA00577245 /* ThunderRequest.xcodeproj */,
+				B663D6661BFA0007004B6B88 /* NSDate+Tools.h */,
+				B663D6671BFA0007004B6B88 /* NSDate+Tools.m */,
+				B6C31C7B1BFDDDE700BAEAF6 /* File.h */,
+				B6C31C7C1BFDDDE700BAEAF6 /* File.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B663D6031BF9DFB9004B6B88 /* putio-atv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B663D6311BF9DFB9004B6B88 /* Build configuration list for PBXNativeTarget "putio-atv" */;
+			buildPhases = (
+				B663D6001BF9DFB9004B6B88 /* Sources */,
+				B663D6011BF9DFB9004B6B88 /* Frameworks */,
+				B663D6021BF9DFB9004B6B88 /* Resources */,
+				B6DDCF481C00AAE200673096 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6DDCF471C00AAE200673096 /* PBXTargetDependency */,
+			);
+			name = "putio-atv";
+			productName = "putio-atv";
+			productReference = B663D6041BF9DFB9004B6B88 /* putio-atv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B663D61C1BF9DFB9004B6B88 /* putio-atvTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B663D6341BF9DFB9004B6B88 /* Build configuration list for PBXNativeTarget "putio-atvTests" */;
+			buildPhases = (
+				B663D6191BF9DFB9004B6B88 /* Sources */,
+				B663D61A1BF9DFB9004B6B88 /* Frameworks */,
+				B663D61B1BF9DFB9004B6B88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B663D61F1BF9DFB9004B6B88 /* PBXTargetDependency */,
+			);
+			name = "putio-atvTests";
+			productName = "putio-atvTests";
+			productReference = B663D61D1BF9DFB9004B6B88 /* putio-atvTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B663D6271BF9DFB9004B6B88 /* putio-atvUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B663D6371BF9DFB9004B6B88 /* Build configuration list for PBXNativeTarget "putio-atvUITests" */;
+			buildPhases = (
+				B663D6241BF9DFB9004B6B88 /* Sources */,
+				B663D6251BF9DFB9004B6B88 /* Frameworks */,
+				B663D6261BF9DFB9004B6B88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B663D62A1BF9DFB9004B6B88 /* PBXTargetDependency */,
+			);
+			name = "putio-atvUITests";
+			productName = "putio-atvUITests";
+			productReference = B663D6281BF9DFB9004B6B88 /* putio-atvUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B663D5FC1BF9DFB9004B6B88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "The Means";
+				TargetAttributes = {
+					B663D6031BF9DFB9004B6B88 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 433A2AQ2ZB;
+					};
+					B663D61C1BF9DFB9004B6B88 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = B663D6031BF9DFB9004B6B88;
+					};
+					B663D6271BF9DFB9004B6B88 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = B663D6031BF9DFB9004B6B88;
+					};
+				};
+			};
+			buildConfigurationList = B663D5FF1BF9DFB9004B6B88 /* Build configuration list for PBXProject "putio-atv" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B663D5FB1BF9DFB9004B6B88;
+			productRefGroup = B663D6051BF9DFB9004B6B88 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B647498C1BFA0BD700577245 /* Products */;
+					ProjectRef = B647497B1BFA0ACA00577245 /* ThunderRequest.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B663D6031BF9DFB9004B6B88 /* putio-atv */,
+				B663D61C1BF9DFB9004B6B88 /* putio-atvTests */,
+				B663D6271BF9DFB9004B6B88 /* putio-atvUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B64749921BFA0BD800577245 /* ThunderRequest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ThunderRequest.framework;
+			remoteRef = B64749911BFA0BD800577245 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B64749941BFA0BD800577245 /* ThunderRequestTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ThunderRequestTests.xctest;
+			remoteRef = B64749931BFA0BD800577245 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B64749961BFA0BD800577245 /* ThunderRequestTV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ThunderRequestTV.framework;
+			remoteRef = B64749951BFA0BD800577245 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B663D6021BF9DFB9004B6B88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D91BA81BFDC76E00F7065C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B663D61B1BF9DFB9004B6B88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B663D6261BF9DFB9004B6B88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B663D6001BF9DFB9004B6B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B663D6451BF9E597004B6B88 /* PutioViewController.m in Sources */,
+				B663D63D1BF9E086004B6B88 /* FolderViewController.m in Sources */,
+				B663D6121BF9DFB9004B6B88 /* putio_atv.xcdatamodeld in Sources */,
+				B663D6551BF9EC25004B6B88 /* UIColor+Putio.m in Sources */,
+				B663D6681BFA0007004B6B88 /* NSDate+Tools.m in Sources */,
+				B68CA2321BFB553E005B93D0 /* AsyncImageView.m in Sources */,
+				B663D6481BF9E6CD004B6B88 /* FilesViewController.m in Sources */,
+				B682F5D71C00B34E001B5A10 /* UIView+GroupView.m in Sources */,
+				B609B8541BFB43B000B4B544 /* BrowseFilesViewController.m in Sources */,
+				B64749A21BFA0D5600577245 /* PutioController.m in Sources */,
+				B6A0CDA11C015A4100FDE54C /* TraktController.m in Sources */,
+				B6DDCF331C009FE500673096 /* FileDetailViewController.m in Sources */,
+				B663D60C1BF9DFB9004B6B88 /* AppDelegate.m in Sources */,
+				B68CA22D1BFB5446005B93D0 /* FileCollectionViewCell.m in Sources */,
+				B682F5DA1C00B398001B5A10 /* PCGroupView.m in Sources */,
+				B663D6411BF9E323004B6B88 /* FileCollectionView.m in Sources */,
+				B663D64B1BF9E9E3004B6B88 /* SearchFilesViewController.m in Sources */,
+				B663D6091BF9DFB9004B6B88 /* main.m in Sources */,
+				B663D6581BF9EF18004B6B88 /* FilesTableViewController.m in Sources */,
+				B6C31C7D1BFDDDE700BAEAF6 /* File.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B663D6191BF9DFB9004B6B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B663D6221BF9DFB9004B6B88 /* putio_atvTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B663D6241BF9DFB9004B6B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B663D62D1BF9DFB9004B6B88 /* putio_atvUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B663D61F1BF9DFB9004B6B88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B663D6031BF9DFB9004B6B88 /* putio-atv */;
+			targetProxy = B663D61E1BF9DFB9004B6B88 /* PBXContainerItemProxy */;
+		};
+		B663D62A1BF9DFB9004B6B88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B663D6031BF9DFB9004B6B88 /* putio-atv */;
+			targetProxy = B663D6291BF9DFB9004B6B88 /* PBXContainerItemProxy */;
+		};
+		B6DDCF471C00AAE200673096 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ThunderRequestTV;
+			targetProxy = B6DDCF461C00AAE200673096 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B663D62F1BF9DFB9004B6B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		B663D6301BF9DFB9004B6B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B663D6321BF9DFB9004B6B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThunderRequest/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/ThunderRequest/build/Debug-appletvos",
+				);
+				INFOPLIST_FILE = "putio-atv/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.themeans.putio-atv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B663D6331BF9DFB9004B6B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThunderRequest/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/ThunderRequest/build/Debug-appletvos",
+				);
+				INFOPLIST_FILE = "putio-atv/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.themeans.putio-atv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B663D6351BF9DFB9004B6B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "putio-atvTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.themeans.putio-atvTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/putio-atv.app/putio-atv";
+			};
+			name = Debug;
+		};
+		B663D6361BF9DFB9004B6B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "putio-atvTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.themeans.putio-atvTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/putio-atv.app/putio-atv";
+			};
+			name = Release;
+		};
+		B663D6381BF9DFB9004B6B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "putio-atvUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.themeans.putio-atvUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "putio-atv";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B663D6391BF9DFB9004B6B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "putio-atvUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.themeans.putio-atvUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "putio-atv";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B663D5FF1BF9DFB9004B6B88 /* Build configuration list for PBXProject "putio-atv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B663D62F1BF9DFB9004B6B88 /* Debug */,
+				B663D6301BF9DFB9004B6B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B663D6311BF9DFB9004B6B88 /* Build configuration list for PBXNativeTarget "putio-atv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B663D6321BF9DFB9004B6B88 /* Debug */,
+				B663D6331BF9DFB9004B6B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B663D6341BF9DFB9004B6B88 /* Build configuration list for PBXNativeTarget "putio-atvTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B663D6351BF9DFB9004B6B88 /* Debug */,
+				B663D6361BF9DFB9004B6B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B663D6371BF9DFB9004B6B88 /* Build configuration list for PBXNativeTarget "putio-atvUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B663D6381BF9DFB9004B6B88 /* Debug */,
+				B663D6391BF9DFB9004B6B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B663D6101BF9DFB9004B6B88 /* putio_atv.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B663D6111BF9DFB9004B6B88 /* putio_atv.xcdatamodel */,
+			);
+			currentVersion = B663D6111BF9DFB9004B6B88 /* putio_atv.xcdatamodel */;
+			path = putio_atv.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B663D5FC1BF9DFB9004B6B88 /* Project object */;
+}
