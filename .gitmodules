@@ -1,3 +1,6 @@
 [submodule "ThunderRequest"]
-  path = ThunderRequest
-  url = git://github.com/3sidedcube/iOS-ThunderRequest.git
+	path = ThunderRequest
+	url = git@github.com:3sidedcube/iOS-ThunderRequest.git
+[submodule "iOS-ThunderRequest"]
+	path = iOS-ThunderRequest
+	url = git@github.com:3sidedcube/iOS-ThunderRequest.git
