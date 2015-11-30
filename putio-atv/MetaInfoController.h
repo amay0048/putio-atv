@@ -9,13 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "File.h"
 
-@interface TraktController : NSObject
+@interface MetaInfoController : NSObject
 
-+ (TraktController *)sharedController;
++ (MetaInfoController *)sharedController;
 
 typedef void (^ContentDictionaryCompletion)(NSDictionary *content, NSError *error);
 typedef void (^ContentURLCompletion)(NSURL *fileURL, NSError *Error);
 
 - (void)getFileMetadata:(File *)parentFile withCompletion:(ContentDictionaryCompletion)completion;
+- (void)getMetaCollectionFromFileCollection:(NSArray<File*> *)files withCompletion:(ContentDictionaryCompletion)completion;
 
 @end

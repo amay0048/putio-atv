@@ -6,22 +6,22 @@
 //  Copyright © 2015 The Means. All rights reserved.
 //
 
-#import "TraktController.h"
+#import "MetaInfoController.h"
 
 @import ThunderRequestTV;
 
-@interface TraktController ()
+@interface MetaInfoController ()
 
 @property (nonatomic, strong) TSCRequestController *showMetaRequestController;
 @property (nonatomic, strong) TSCRequestController *episodeMetaRequestController;
 
 @end
 
-@implementation TraktController
+@implementation MetaInfoController
 
-+ (TraktController *)sharedController
++ (MetaInfoController *)sharedController
 {
-    static TraktController *sharedController;
+    static MetaInfoController *sharedController;
     
     @synchronized(self) {
         if (sharedController == nil) {
@@ -48,6 +48,64 @@
         
     }
     return self;
+}
+
+- (void)getMetaCollectionFromFileCollection:(NSArray<File *> *)filesArray withCompletion:(ContentDictionaryCompletion)completion
+{
+    NSMutableDictionary *seasonsChildren = [[NSMutableDictionary alloc] init];
+    NSMutableDictionary *moviesChildren = [[NSMutableDictionary alloc] init];
+    NSMutableDictionary *otherChildren = [[NSMutableDictionary alloc] init];
+    
+    for (File *fileItem in filesArray) {
+        NSDictionary *seasonInfo = [self getSeasonInfoFromFilename:fileItem.title];
+        NSString *movieInfo = [self getMovieInfoFromFilename:fileItem.title];
+        
+        if([seasonInfo valueForKey:@"seasonName"]){
+            
+            
+            // Get Existing Values if they exist
+            File *season = [seasonsChildren valueForKey:[seasonInfo valueForKey:@"seasonName"]];
+            // If the season doesn't exit, then create it
+            if(season == nil)
+            {
+                season = [[File alloc] initWithDictionary:@{@"name":[seasonInfo valueForKey:@"seasonName"],@"content_type":@"meta/season"}];
+            }
+            
+            File *seasonNumber = [[season getChildren] valueForKey:[seasonInfo valueForKey:@"seasonNumber"]];;
+            // If the season number doesn't exist, create it
+            if(seasonNumber == nil)
+            {
+                seasonNumber = [[File alloc] initWithDictionary:@{@"name":[seasonInfo valueForKey:@"seasonNumber"],@"content_type":@"meta/season-number"}];
+                [season setObject:seasonNumber forChildKey:[seasonInfo valueForKey:@"seasonNumber"]];
+            }
+            
+            // Build the new object into the existing structure
+            NSString *key = [seasonInfo valueForKey:@"episodeNumber"];
+            
+            [seasonNumber setObject:fileItem forChildKey:key];
+            [seasonsChildren setValue:season forKey:[seasonInfo valueForKey:@"seasonName"]];
+        }
+        else if([movieInfo length])
+        {
+            // Add to movie structure
+            [moviesChildren setObject:fileItem forKey:movieInfo];
+            
+        }
+        else
+        {
+            [otherChildren setObject:fileItem forKey:fileItem.title];
+        }
+    }
+    
+    File *seasons = [[File alloc] initWithDictionary:@{@"name":@"seasons",@"content_type":@"meta/category"}];
+    File *movies = [[File alloc] initWithDictionary:@{@"name":@"movies",@"content_type":@"meta/category"}];
+    File *other = [[File alloc] initWithDictionary:@{@"name":@"other",@"content_type":@"meta/category"}];
+    seasons.children = seasonsChildren;
+    movies.children = moviesChildren;
+    other.children = otherChildren;
+    NSDictionary *fileCollection = @{@"seasons":seasons,@"movies":movies,@"other":other};
+    
+    completion(fileCollection, nil);
 }
 
 - (void)getFileMetadata:(File *)parentFile withCompletion:(ContentDictionaryCompletion)completion
@@ -168,7 +226,7 @@
     NSRange   searchedRange = NSMakeRange(0, [searchedString length]);
     NSString *pattern = @"(.+?)(\\d\\d\\d\\d)";
     NSError  *error = nil;
-    NSMutableDictionary *output =@"";
+    NSString *output = @"";
     
     NSRegularExpression* regex = [NSRegularExpression regularExpressionWithPattern: pattern options:0 error:&error];
     NSArray* matches = [regex matchesInString:searchedString options:0 range: searchedRange];

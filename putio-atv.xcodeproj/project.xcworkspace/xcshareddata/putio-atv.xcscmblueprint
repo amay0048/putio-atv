@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DAFB731842D67C9A02118AFEB45CDA8E9620BD7A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DAFB731842D67C9A02118AFEB45CDA8E9620BD7A" : 0,
+    "48D1D77F8E696CFD83C9D9AC0D062062AD5CA998" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "54924790-1004-4108-A254-1D92D034681C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DAFB731842D67C9A02118AFEB45CDA8E9620BD7A" : "putio-atv\/",
+    "48D1D77F8E696CFD83C9D9AC0D062062AD5CA998" : "putio-atv\/ThunderRequest\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "putio-atv",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "putio-atv.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:3sidedcube\/iOS-ThunderRequest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "48D1D77F8E696CFD83C9D9AC0D062062AD5CA998"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/amay0048\/putio-atv.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DAFB731842D67C9A02118AFEB45CDA8E9620BD7A"
+    }
+  ]
+}

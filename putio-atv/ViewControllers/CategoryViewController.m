@@ -6,21 +6,21 @@
 //  Copyright © 2015 The Means. All rights reserved.
 //
 
-#import "FolderViewController.h"
-#import "FilesViewController.h"
+#import "CategoryViewController.h"
+#import "CategoryMetaInfoViewController.h"
 #import "FilesTableViewController.h"
 
 #import "UIColor+Putio.h"
 #import "PutioController.h"
 
-@interface FolderViewController () <FilesTableViewControllerDelegate>
+@interface CategoryViewController () <FilesTableViewControllerDelegate>
 
 @property (nonatomic, strong) FilesTableViewController *filesTableViewController;
-@property (nonatomic, strong) FilesViewController *filesViewController;
+@property (nonatomic, strong) CategoryMetaInfoViewController *filesViewController;
 
 @end
 
-@implementation FolderViewController
+@implementation CategoryViewController
 
 - (instancetype)init
 {
@@ -28,7 +28,7 @@
         
         self.title = @"Browse";
         
-        self.filesViewController = [FilesViewController new];
+        self.filesViewController = [CategoryMetaInfoViewController new];
         self.filesViewController.collectionView.numberOfFilesPerRow = 2;
         
         self.filesTableViewController = [FilesTableViewController new];

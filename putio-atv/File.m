@@ -21,6 +21,27 @@
     return @"video/mp4";
 }
 
+- (void)setObject:(NSObject *)object forChildKey:(NSString *)key
+{
+    [self.children setObject:object forKey:key];
+}
+
+- (NSMutableDictionary *)getChildren
+{
+    return _children;
+}
+
+#pragma init methods
+
+- (id)init
+{
+    if (self = [super init])
+    {
+        self.children = [[NSMutableDictionary alloc]init];
+    }
+    return self;
+}
+
 - (instancetype)initAsRoot
 {
     self = [super init];
@@ -30,12 +51,16 @@
     self.title = @"root";
     self.subtitle = @"application/x-directory";
     
+    self.children = [[NSMutableDictionary alloc] init];
+    
     return self;
 }
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary
 {
     self = [super init];
+    self.children = [[NSMutableDictionary alloc] init];
+    
     if (self) {
         
         if ([dictionary isKindOfClass:[NSDictionary class]]) {

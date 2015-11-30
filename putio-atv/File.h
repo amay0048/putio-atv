@@ -14,6 +14,9 @@
 - (instancetype)initAsRoot;
 - (NSString *)getfolderTypeString;
 
+- (void)setObject:(NSObject *)object forChildKey:(NSString *)key;
+- (NSMutableDictionary *)getChildren;
+
 @property (nonatomic, copy) NSNumber *identifier;
 @property (nonatomic, copy) NSNumber *parentIdentifier;
 @property (nonatomic, copy) NSNumber *mpfour;
@@ -31,6 +34,8 @@
 @property (nonatomic, strong) NSArray *versions;
 @property (nonatomic, copy) NSURL *mpfourURL;
 @property (nonatomic, copy) NSString *mpfourRoute;
+
+@property (nonatomic, strong) NSMutableDictionary *children;
 
 //@property (nonatomic, strong) EpisodeVersion *originalVersion;
 //

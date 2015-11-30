@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "BrowseFilesViewController.h"
-#import "FolderViewController.h"
+#import "CategoryViewController.h"
+#import "CategoryMetaInfoViewController.h"
 #import "SearchFilesViewController.h"
 #import "UIColor+Putio.h"
 #import "PutioController.h"
@@ -27,7 +28,8 @@
 //    LiveChannelsViewController *channelsViewController = [LiveChannelsViewController new];
 
     BrowseFilesViewController *browseFilesViewController = [BrowseFilesViewController new];
-    FolderViewController *folderViewController = [FolderViewController new];
+//    CategoryViewController *categoryViewController = [CategoryViewController new];
+    CategoryMetaInfoViewController *categoryViewController = [CategoryMetaInfoViewController new];
     SearchFilesViewController *searchViewController = [SearchFilesViewController new];
     
     //Create Search controller
@@ -50,8 +52,8 @@
     //Setup Tab Bar
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
-//    tabBarController.viewControllers = @[browseFilesViewController, folderViewController, searchNavController];
-    tabBarController.viewControllers = @[browseFilesViewController, searchNavController];
+    tabBarController.viewControllers = @[browseFilesViewController, categoryViewController, searchNavController];
+//    tabBarController.viewControllers = @[browseFilesViewController, searchNavController];
     
 //    tabBarController.viewControllers = @[featuredViewController, categoriesViewController, channelsViewController, searchNavController];
 

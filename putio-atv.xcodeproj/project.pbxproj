@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B609B8541BFB43B000B4B544 /* BrowseFilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B609B8531BFB43B000B4B544 /* BrowseFilesViewController.m */; };
+		B63373091C0B0BE8008AB617 /* CategoryMetaInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63373081C0B0BE8008AB617 /* CategoryMetaInfoViewController.m */; };
 		B64749A21BFA0D5600577245 /* PutioController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64749A11BFA0D5600577245 /* PutioController.m */; };
 		B663D6091BF9DFB9004B6B88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D6081BF9DFB9004B6B88 /* main.m */; };
 		B663D60C1BF9DFB9004B6B88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D60B1BF9DFB9004B6B88 /* AppDelegate.m */; };
 		B663D6121BF9DFB9004B6B88 /* putio_atv.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B663D6101BF9DFB9004B6B88 /* putio_atv.xcdatamodeld */; };
 		B663D6221BF9DFB9004B6B88 /* putio_atvTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D6211BF9DFB9004B6B88 /* putio_atvTests.m */; };
 		B663D62D1BF9DFB9004B6B88 /* putio_atvUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D62C1BF9DFB9004B6B88 /* putio_atvUITests.m */; };
-		B663D63D1BF9E086004B6B88 /* FolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D63C1BF9E086004B6B88 /* FolderViewController.m */; };
+		B663D63D1BF9E086004B6B88 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D63C1BF9E086004B6B88 /* CategoryViewController.m */; };
 		B663D6411BF9E323004B6B88 /* FileCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D6401BF9E323004B6B88 /* FileCollectionView.m */; };
 		B663D6451BF9E597004B6B88 /* PutioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D6441BF9E597004B6B88 /* PutioViewController.m */; };
 		B663D6481BF9E6CD004B6B88 /* FilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B663D6471BF9E6CD004B6B88 /* FilesViewController.m */; };
@@ -26,12 +27,10 @@
 		B682F5DA1C00B398001B5A10 /* PCGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = B682F5D91C00B398001B5A10 /* PCGroupView.m */; };
 		B68CA22D1BFB5446005B93D0 /* FileCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B68CA22C1BFB5446005B93D0 /* FileCollectionViewCell.m */; };
 		B68CA2321BFB553E005B93D0 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B68CA2311BFB553E005B93D0 /* AsyncImageView.m */; };
-		B6A0CDA11C015A4100FDE54C /* TraktController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0CDA01C015A4100FDE54C /* TraktController.m */; };
+		B6A0CDA11C015A4100FDE54C /* MetaInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0CDA01C015A4100FDE54C /* MetaInfoController.m */; };
 		B6C31C7D1BFDDDE700BAEAF6 /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C31C7C1BFDDDE700BAEAF6 /* File.m */; };
 		B6D91BA81BFDC76E00F7065C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D91BA71BFDC76E00F7065C /* Assets.xcassets */; };
 		B6DDCF331C009FE500673096 /* FileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DDCF321C009FE500673096 /* FileDetailViewController.m */; };
-		B6DDCF441C00AAE200673096 /* ThunderRequestTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64749961BFA0BD800577245 /* ThunderRequestTV.framework */; };
-		B6DDCF451C00AAE200673096 /* ThunderRequestTV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B64749961BFA0BD800577245 /* ThunderRequestTV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,13 +48,6 @@
 			remoteGlobalIDString = C2E5088D19C835A300350F00;
 			remoteInfo = ThunderRequestTests;
 		};
-		B64749951BFA0BD800577245 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B647497B1BFA0ACA00577245 /* ThunderRequest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 49084FD11BD13DBD0012F636;
-			remoteInfo = ThunderRequestTV;
-		};
 		B663D61E1BF9DFB9004B6B88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B663D5FC1BF9DFB9004B6B88 /* Project object */;
@@ -70,13 +62,6 @@
 			remoteGlobalIDString = B663D6031BF9DFB9004B6B88;
 			remoteInfo = "putio-atv";
 		};
-		B6DDCF461C00AAE200673096 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B647497B1BFA0ACA00577245 /* ThunderRequest.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 49084FD01BD13DBD0012F636;
-			remoteInfo = ThunderRequestTV;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,7 +71,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B6DDCF451C00AAE200673096 /* ThunderRequestTV.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +80,8 @@
 /* Begin PBXFileReference section */
 		B609B8521BFB43B000B4B544 /* BrowseFilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowseFilesViewController.h; path = ViewControllers/BrowseFilesViewController.h; sourceTree = "<group>"; };
 		B609B8531BFB43B000B4B544 /* BrowseFilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowseFilesViewController.m; path = ViewControllers/BrowseFilesViewController.m; sourceTree = "<group>"; };
+		B63373071C0B0BE8008AB617 /* CategoryMetaInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryMetaInfoViewController.h; path = ViewControllers/CategoryMetaInfoViewController.h; sourceTree = "<group>"; };
+		B63373081C0B0BE8008AB617 /* CategoryMetaInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryMetaInfoViewController.m; path = ViewControllers/CategoryMetaInfoViewController.m; sourceTree = "<group>"; };
 		B647497B1BFA0ACA00577245 /* ThunderRequest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ThunderRequest.xcodeproj; path = ../ThunderRequest/ThunderRequest.xcodeproj; sourceTree = "<group>"; };
 		B64749A01BFA0D5600577245 /* PutioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PutioController.h; sourceTree = "<group>"; };
 		B64749A11BFA0D5600577245 /* PutioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PutioController.m; sourceTree = "<group>"; };
@@ -111,8 +97,8 @@
 		B663D6281BF9DFB9004B6B88 /* putio-atvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "putio-atvUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B663D62C1BF9DFB9004B6B88 /* putio_atvUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = putio_atvUITests.m; sourceTree = "<group>"; };
 		B663D62E1BF9DFB9004B6B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B663D63B1BF9E086004B6B88 /* FolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FolderViewController.h; path = ViewControllers/FolderViewController.h; sourceTree = "<group>"; };
-		B663D63C1BF9E086004B6B88 /* FolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FolderViewController.m; path = ViewControllers/FolderViewController.m; sourceTree = "<group>"; };
+		B663D63B1BF9E086004B6B88 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryViewController.h; path = ViewControllers/CategoryViewController.h; sourceTree = "<group>"; };
+		B663D63C1BF9E086004B6B88 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryViewController.m; path = ViewControllers/CategoryViewController.m; sourceTree = "<group>"; };
 		B663D63F1BF9E323004B6B88 /* FileCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileCollectionView.h; path = Views/FileCollectionView.h; sourceTree = "<group>"; };
 		B663D6401BF9E323004B6B88 /* FileCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileCollectionView.m; path = Views/FileCollectionView.m; sourceTree = "<group>"; };
 		B663D6431BF9E597004B6B88 /* PutioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PutioViewController.h; path = ViewControllers/PutioViewController.h; sourceTree = "<group>"; };
@@ -135,8 +121,8 @@
 		B68CA22C1BFB5446005B93D0 /* FileCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileCollectionViewCell.m; path = Views/FileCollectionViewCell.m; sourceTree = "<group>"; };
 		B68CA2301BFB553E005B93D0 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncImageView.h; path = Views/AsyncImageView.h; sourceTree = "<group>"; };
 		B68CA2311BFB553E005B93D0 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncImageView.m; path = Views/AsyncImageView.m; sourceTree = "<group>"; };
-		B6A0CD9F1C015A4100FDE54C /* TraktController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TraktController.h; sourceTree = "<group>"; };
-		B6A0CDA01C015A4100FDE54C /* TraktController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TraktController.m; sourceTree = "<group>"; };
+		B6A0CD9F1C015A4100FDE54C /* MetaInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaInfoController.h; sourceTree = "<group>"; };
+		B6A0CDA01C015A4100FDE54C /* MetaInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetaInfoController.m; sourceTree = "<group>"; };
 		B6C31C7B1BFDDDE700BAEAF6 /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
 		B6C31C7C1BFDDDE700BAEAF6 /* File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
 		B6D91BA71BFDC76E00F7065C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,7 +135,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6DDCF441C00AAE200673096 /* ThunderRequestTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +160,6 @@
 			children = (
 				B64749921BFA0BD800577245 /* ThunderRequest.framework */,
 				B64749941BFA0BD800577245 /* ThunderRequestTests.xctest */,
-				B64749961BFA0BD800577245 /* ThunderRequestTV.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,14 +230,16 @@
 		B663D63E1BF9E172004B6B88 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B663D63B1BF9E086004B6B88 /* CategoryViewController.h */,
+				B663D63C1BF9E086004B6B88 /* CategoryViewController.m */,
+				B63373071C0B0BE8008AB617 /* CategoryMetaInfoViewController.h */,
+				B63373081C0B0BE8008AB617 /* CategoryMetaInfoViewController.m */,
 				B609B8521BFB43B000B4B544 /* BrowseFilesViewController.h */,
 				B609B8531BFB43B000B4B544 /* BrowseFilesViewController.m */,
 				B663D6561BF9EF18004B6B88 /* FilesTableViewController.h */,
 				B663D6571BF9EF18004B6B88 /* FilesTableViewController.m */,
 				B663D6461BF9E6CD004B6B88 /* FilesViewController.h */,
 				B663D6471BF9E6CD004B6B88 /* FilesViewController.m */,
-				B663D63B1BF9E086004B6B88 /* FolderViewController.h */,
-				B663D63C1BF9E086004B6B88 /* FolderViewController.m */,
 				B663D6431BF9E597004B6B88 /* PutioViewController.h */,
 				B663D6441BF9E597004B6B88 /* PutioViewController.m */,
 				B663D6491BF9E9E3004B6B88 /* SearchFilesViewController.h */,
@@ -295,8 +281,8 @@
 			children = (
 				B64749A01BFA0D5600577245 /* PutioController.h */,
 				B64749A11BFA0D5600577245 /* PutioController.m */,
-				B6A0CD9F1C015A4100FDE54C /* TraktController.h */,
-				B6A0CDA01C015A4100FDE54C /* TraktController.m */,
+				B6A0CD9F1C015A4100FDE54C /* MetaInfoController.h */,
+				B6A0CDA01C015A4100FDE54C /* MetaInfoController.m */,
 				B647497B1BFA0ACA00577245 /* ThunderRequest.xcodeproj */,
 				B663D6661BFA0007004B6B88 /* NSDate+Tools.h */,
 				B663D6671BFA0007004B6B88 /* NSDate+Tools.m */,
@@ -321,7 +307,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				B6DDCF471C00AAE200673096 /* PBXTargetDependency */,
 			);
 			name = "putio-atv";
 			productName = "putio-atv";
@@ -428,13 +413,6 @@
 			remoteRef = B64749931BFA0BD800577245 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B64749961BFA0BD800577245 /* ThunderRequestTV.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ThunderRequestTV.framework;
-			remoteRef = B64749951BFA0BD800577245 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -468,7 +446,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B663D6451BF9E597004B6B88 /* PutioViewController.m in Sources */,
-				B663D63D1BF9E086004B6B88 /* FolderViewController.m in Sources */,
+				B63373091C0B0BE8008AB617 /* CategoryMetaInfoViewController.m in Sources */,
+				B663D63D1BF9E086004B6B88 /* CategoryViewController.m in Sources */,
 				B663D6121BF9DFB9004B6B88 /* putio_atv.xcdatamodeld in Sources */,
 				B663D6551BF9EC25004B6B88 /* UIColor+Putio.m in Sources */,
 				B663D6681BFA0007004B6B88 /* NSDate+Tools.m in Sources */,
@@ -477,7 +456,7 @@
 				B682F5D71C00B34E001B5A10 /* UIView+GroupView.m in Sources */,
 				B609B8541BFB43B000B4B544 /* BrowseFilesViewController.m in Sources */,
 				B64749A21BFA0D5600577245 /* PutioController.m in Sources */,
-				B6A0CDA11C015A4100FDE54C /* TraktController.m in Sources */,
+				B6A0CDA11C015A4100FDE54C /* MetaInfoController.m in Sources */,
 				B6DDCF331C009FE500673096 /* FileDetailViewController.m in Sources */,
 				B663D60C1BF9DFB9004B6B88 /* AppDelegate.m in Sources */,
 				B68CA22D1BFB5446005B93D0 /* FileCollectionViewCell.m in Sources */,
@@ -518,11 +497,6 @@
 			isa = PBXTargetDependency;
 			target = B663D6031BF9DFB9004B6B88 /* putio-atv */;
 			targetProxy = B663D6291BF9DFB9004B6B88 /* PBXContainerItemProxy */;
-		};
-		B6DDCF471C00AAE200673096 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ThunderRequestTV;
-			targetProxy = B6DDCF461C00AAE200673096 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

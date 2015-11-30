@@ -8,6 +8,7 @@
 
 #import "BrowseFilesViewController.h"
 #import "File.h"
+#import "MetaInfoController.h"
 
 @interface BrowseFilesViewController ()
 

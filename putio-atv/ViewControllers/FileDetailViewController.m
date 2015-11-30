@@ -10,7 +10,7 @@
 #import "UIColor+Putio.h"
 #import "PCGroupView.h"
 #import "PutioController.h"
-#import "TraktController.h"
+#import "MetaInfoController.h"
 
 @import AVKit;
 @import AVFoundation;
@@ -70,7 +70,7 @@
     self.descriptionLabel.textColor = [UIColor whiteColor];
     self.descriptionLabel.numberOfLines = 0;
     
-    [[TraktController sharedController] getFileMetadata:self.file withCompletion:^(NSDictionary *fileMetaData, NSError *error) {
+    [[MetaInfoController sharedController] getFileMetadata:self.file withCompletion:^(NSDictionary *fileMetaData, NSError *error) {
         
         if(error)
         {

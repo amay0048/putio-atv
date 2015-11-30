@@ -28,7 +28,7 @@
     self.tableView.layoutMargins = UIEdgeInsetsMake(50, 50, 50, 50);
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     
-    self.files = @[@"one", @"two", @"three", @"four", @"five"];
+    self.files = @[@"Other", @"Seasons", @"Movies"];
     [self.tableView reloadData];
 }
 

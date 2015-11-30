@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FolderViewController : UISplitViewController
+@interface CategoryViewController : UISplitViewController
 
 @end
