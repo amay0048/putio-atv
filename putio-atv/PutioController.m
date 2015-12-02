@@ -80,7 +80,7 @@
         
         if(![parentFile.identifier isEqualToNumber:@0])
         {
-            File *parent = [[File alloc] initWithDictionary:@{@"id":parentFile.parentIdentifier,@"parent_id":@0,@"name":@"..",@"content_type":@"application/x-directory"}];
+            File *parent = [[File alloc] initAsParentWithId:parentFile.parentIdentifier];
             [files addObject:parent];
         }
         

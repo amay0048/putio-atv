@@ -46,7 +46,7 @@
 - (void)fileCollectionView:(FileCollectionView *)view didSelectFile:(File *)file
 {
     
-    if ([file.subtitle isEqualToString:[file getfolderTypeString]]) {
+    if ([file.subtitle isEqualToString:[file getFolderTypeString]] || [file.subtitle isEqualToString:[file getParentTypeString]]) {
         [self.activityIndicatorView startAnimating];
         [self.view bringSubviewToFront:self.activityIndicatorView];
         

@@ -52,7 +52,7 @@
     //Setup Tab Bar
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
-    tabBarController.viewControllers = @[browseFilesViewController, categoryViewController, searchNavController];
+    tabBarController.viewControllers = @[categoryViewController, browseFilesViewController, searchNavController];
 //    tabBarController.viewControllers = @[browseFilesViewController, searchNavController];
     
 //    tabBarController.viewControllers = @[featuredViewController, categoriesViewController, channelsViewController, searchNavController];

@@ -11,9 +11,14 @@
 
 @implementation File
 
-- (NSString *)getfolderTypeString
+- (NSString *)getFolderTypeString
 {
-        return @"application/x-directory";
+    return @"application/x-directory";
+}
+
+- (NSString *)getParentTypeString
+{
+    return @"parent";
 }
 
 - (NSString *)getMpfourTypeString
@@ -49,7 +54,49 @@
     self.identifier = @0;
     self.parentIdentifier = @0;
     self.title = @"root";
-    self.subtitle = @"application/x-directory";
+    self.subtitle = [self getFolderTypeString];
+    
+    self.children = [[NSMutableDictionary alloc] init];
+    
+    return self;
+}
+
+- (instancetype)initAsParent
+{
+    self = [super init];
+    
+    self.identifier = @0;
+    self.parentIdentifier = @0;
+    self.title = @"..";
+    self.subtitle = [self getParentTypeString];
+    
+    self.children = [[NSMutableDictionary alloc] init];
+    
+    return self;
+}
+
+- (instancetype)initAsParentWithId:(NSNumber *)identifier
+{
+    self = [super init];
+    
+    self.identifier = identifier;
+    self.parentIdentifier = @0;
+    self.title = @"..";
+    self.subtitle = [self getFolderTypeString];
+    
+    self.children = [[NSMutableDictionary alloc] init];
+    
+    return self;
+}
+
+- (instancetype)initAsParentWithName:(NSString *)name
+{
+    self = [super init];
+    
+    self.identifier = @0;
+    self.parentIdentifier = @0;
+    self.title = name;
+    self.subtitle = [self getParentTypeString];
     
     self.children = [[NSMutableDictionary alloc] init];
     

@@ -11,8 +11,14 @@
 @interface File : NSObject
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
 - (instancetype)initAsRoot;
-- (NSString *)getfolderTypeString;
+- (instancetype)initAsParent;
+- (instancetype)initAsParentWithId:(NSNumber *)identifier;
+- (instancetype)initAsParentWithName:(NSString *)name;
+
+- (NSString *)getFolderTypeString;
+- (NSString *)getParentTypeString;
 
 - (void)setObject:(NSObject *)object forChildKey:(NSString *)key;
 - (NSMutableDictionary *)getChildren;

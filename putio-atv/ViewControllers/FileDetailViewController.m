@@ -124,17 +124,20 @@
     [self.convertButton setTitle:@"Make Mp4" forState:UIControlStateNormal];
     [self.convertButton addTarget:self action:@selector(handlePlay:) forControlEvents:UIControlEventPrimaryActionTriggered];
     
-//    self.relatedEpisodeView = [[FileCollectionView alloc] init];
-//    self.relatedEpisodeView.numberOfFilesPerRow = 4;
-//    self.relatedEpisodeView.collectionLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-//    self.relatedEpisodeView.delegate = self;
-//    self.relatedEpisodeView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.3];
-//    [self.view addSubview:self.relatedEpisodeView];
+    if([self.file.subtitle isEqualToString:[self.file getFolderTypeString]])
+    {
+            self.relatedEpisodeView = [[FileCollectionView alloc] init];
+            self.relatedEpisodeView.numberOfFilesPerRow = 4;
+            self.relatedEpisodeView.collectionLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+            self.relatedEpisodeView.delegate = self;
+            self.relatedEpisodeView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.3];
+            [self.view addSubview:self.relatedEpisodeView];
+            [[PutioController sharedController] getFileList:self.file withCompletion:^(NSArray *content, NSError *error) {
+                self.relatedEpisodeView.files = content;
+            }];
+    }
     
 //    if ([self.episode isMemberOfClass:[Episode class]]) {
-//        [[AuntieController sharedController] getRelatedEpisodesForEpisode:self.episode completion:^(NSArray *content, NSError *error) {
-//            
-//            self.relatedEpisodeView.episodes = content;
 //        }];
 //    }
 //    
@@ -154,7 +157,7 @@
     }
     else
     {
-        [availableButtons addObject:self.convertButton];
+//        [availableButtons addObject:self.convertButton];
     }
 //
 //    if (self.file.audioDescribedVersion) {
@@ -274,10 +277,14 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
-- (void)fileCollectionView:(FileCollectionView *)view didSelectedEpsiode:(File *)file
+- (void)fileCollectionView:(FileCollectionView *)view didSelectFile:(File *)file
 {
-//    EpisodeDetailViewController *viewController = [[EpisodeDetailViewController alloc] initWithEpisode:episode];
-//    [self presentViewController:viewController animated:YES completion:nil];
+    if([file.title isEqualToString:@".."])
+    {
+        [super dismissViewControllerAnimated:YES completion:nil];
+    }
+    FileDetailViewController *viewController = [[FileDetailViewController alloc] initWithFile:file];
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

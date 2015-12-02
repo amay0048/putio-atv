@@ -1,4 +1,4 @@
-//
+ //
 //  CategoryMetaInfoViewController.m
 //  putio-atv
 //
@@ -20,8 +20,8 @@
 {
     if (self = [super init]) {
         
-        self.title = @"Files";
-//        self.collectionView = [[FileCollectionView alloc] init];
+        self.title = @"Home";
+        self.breadcrumbs = [[NSMutableArray alloc] init];
     }
     
     return self;
@@ -43,12 +43,34 @@
 
 - (void)fileCollectionView:(FileCollectionView *)view didSelectFile:(File *)file
 {
-    if ([file.title isEqualToString:@"root"]) {
-        [self refresh];
+    File *root = [[File alloc] initAsParent];
+    
+    // @"meta/category"
+    if ([file.subtitle isEqualToString:[file getParentTypeString]]) {
+        
+        // Only need to act if parent name is ..
+        if([file.title isEqualToString:@".."])
+        {
+            File *bread = [self.breadcrumbs objectAtIndex:self.breadcrumbs.count-1];
+            
+            self.files = bread;
+            self.collectionView.files = bread;
+            
+            [self.breadcrumbs removeObjectAtIndex:self.breadcrumbs.count-1];
+            
+            return;
+        }
+        else {
+            [self.breadcrumbs addObject:self.files];
+        }
+        
+    }
+    else{
+        FileDetailViewController *viewController = [[FileDetailViewController alloc] initWithFile:file];
+        [self presentViewController:viewController animated:YES completion:nil];
         return;
     }
     
-    File *root = [[File alloc] initAsRoot];
     NSMutableArray *current = [[NSMutableArray alloc] init];
     [current addObject:root];
     [current addObjectsFromArray:[file.children allValues]];
@@ -71,7 +93,7 @@
             [self.activityIndicatorView stopAnimating];
             
             NSArray *files = [content allValues];
-            
+
             self.files = files;
             self.collectionView.files = files;
         }];

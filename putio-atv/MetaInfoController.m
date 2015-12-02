@@ -7,6 +7,7 @@
 //
 
 #import "MetaInfoController.h"
+#import "File.h"
 
 @import ThunderRequestTV;
 
@@ -68,14 +69,15 @@
             // If the season doesn't exit, then create it
             if(season == nil)
             {
-                season = [[File alloc] initWithDictionary:@{@"name":[seasonInfo valueForKey:@"seasonName"],@"content_type":@"meta/season"}];
+                season = [[File alloc] initAsParentWithName:[seasonInfo valueForKey:@"seasonName"]];
             }
             
             File *seasonNumber = [[season getChildren] valueForKey:[seasonInfo valueForKey:@"seasonNumber"]];;
             // If the season number doesn't exist, create it
             if(seasonNumber == nil)
             {
-                seasonNumber = [[File alloc] initWithDictionary:@{@"name":[seasonInfo valueForKey:@"seasonNumber"],@"content_type":@"meta/season-number"}];
+                NSString *seasonTitle = [NSString stringWithFormat:@"Season %@",[seasonInfo valueForKey:@"seasonNumber"]];
+                seasonNumber = [[File alloc]  initAsParentWithName:seasonTitle];
                 [season setObject:seasonNumber forChildKey:[seasonInfo valueForKey:@"seasonNumber"]];
             }
             
@@ -97,9 +99,11 @@
         }
     }
     
-    File *seasons = [[File alloc] initWithDictionary:@{@"name":@"seasons",@"content_type":@"meta/category"}];
-    File *movies = [[File alloc] initWithDictionary:@{@"name":@"movies",@"content_type":@"meta/category"}];
-    File *other = [[File alloc] initWithDictionary:@{@"name":@"other",@"content_type":@"meta/category"}];
+    NSString *parentString = [[[File alloc] init] getParentTypeString];
+    
+    File *seasons = [[File alloc] initWithDictionary:@{@"name":@"Seasons",@"content_type":parentString}];
+    File *movies = [[File alloc] initWithDictionary:@{@"name":@"Movies",@"content_type":parentString}];
+    File *other = [[File alloc] initWithDictionary:@{@"name":@"Other",@"content_type":parentString}];
     seasons.children = seasonsChildren;
     movies.children = moviesChildren;
     other.children = otherChildren;

@@ -20,7 +20,7 @@
 {
     if (self = [super init]) {
         
-        self.title = @"Home";
+        self.title = @"Browse";
     }
     
     return self;

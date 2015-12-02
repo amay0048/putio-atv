@@ -10,4 +10,7 @@
 
 @interface CategoryMetaInfoViewController : FilesViewController
 
+@property (nonatomic, strong) NSMutableArray *breadcrumbs;
+@property (nonatomic, strong) NSArray *baseFiles;
+
 @end
